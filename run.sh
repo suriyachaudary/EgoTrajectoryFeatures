@@ -1,7 +1,7 @@
 cd make_vocab
 cmake .
 make
-./make_vocab /home/suriya/ego/action_essentials/dense_annotations/train_windows.txt bidt_30_ temp
+./make_vocab ../train_windows.txt bidt_30_ temp
 cd ../biDT_temporal
 cmake .
 make
