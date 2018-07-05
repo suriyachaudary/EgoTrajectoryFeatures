@@ -1,0 +1,6 @@
+Please refer to dataset preparation, pre-processing, and video stabilization from the repo: https://github.com/suriyasingh/EgoConvNet
+
+We use:
+1. Video stabilization code released by Nghia Ho [http://nghiaho.com/?p=2093]
+1. Dense Trajectories code released by Wang et al. for trajectory aligned features [https://lear.inrialpes.fr/people/wang/dense_trajectories].
+2. Kinematic features code released by Jain et al. [http://www.irisa.fr/texmex/people/jain/w-Flow/]
