@@ -1,4 +1,4 @@
-Please refer to dataset preparation, pre-processing, and video stabilization from the repo: https://github.com/suriyasingh/EgoConvNet
+For dataset preparation, pre-processing, video stabilization, classifier, and evaluation please refer to code from the repo: https://github.com/suriyasingh/EgoConvNet
 
 We use:
 1. Video stabilization code released by Nghia Ho [http://nghiaho.com/?p=2093]
