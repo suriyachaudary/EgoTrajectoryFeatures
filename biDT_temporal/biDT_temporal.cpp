@@ -441,7 +441,7 @@ void get_video_BOFhist_one_by_one(vector<Mat> &vocabulary, char *path, vector<fe
         l.at<float>(0,0) = (float)get_label(label);
 
         hconcat(l, cam, cam);
-        cam_features.push_back(cam_features);
+        cam_features.push_back(cam);
 
         feature f = get_feature(BOFhist);
     
