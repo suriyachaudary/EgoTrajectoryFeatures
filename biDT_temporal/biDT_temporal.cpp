@@ -582,8 +582,11 @@ int main(int argc, char **argv)
     get_video_BOFhist_one_by_one(vocabulary, path_to_train_clips, feature_histogram, train_cam_features, train_stats_features, 0, prefix);
     writeToBinaryFile(feature_histogram, feature_size, train_features);
     feature_histogram.clear();
-    writeToYMLFile(train_cam_features, strcat(train_features,"_cam"));
-    writeToYMLFile(train_stats_features, strcat(train_features,"_stats"));
+
+    writeToYMLFile(train_cam_features, "train_cam_features");
+
+
+    writeToYMLFile(train_stats_features, "train_stats_features");
     
     printf("\n*********** get test feature histogram ***********");   
     printf("\n"); 
@@ -591,8 +594,9 @@ int main(int argc, char **argv)
     Mat test_cam_features, test_stats_features;
     get_video_BOFhist_one_by_one(vocabulary, path_to_test_clips, test_feature_histogram, test_cam_features, test_stats_features, 0, prefix);
     writeToBinaryFile(test_feature_histogram, feature_size, test_features);
-    writeToYMLFile(test_cam_features, strcat(test_features,"_cam"));
-    writeToYMLFile(test_stats_features, strcat(test_features,"_stats"));
+    
+    writeToYMLFile(test_cam_features, "test_cam_features");
+    writeToYMLFile(test_stats_features, "test_stats_features");
 
     printf("\n*********** finish ***********");
     printf("\n");
